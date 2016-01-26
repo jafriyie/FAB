@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="gh.com.firstatlanticbank.firstatlanticaccountopening.CreateAgentActivity"
+    tools:showIn="@layout/activity_create_agent"
+    android:background="#FFFFFF"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:text="Agent's Branch"
+                android:textColor="#5B1B4F"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/agentBranch"
+                style="@style/EditTextCustomHolo"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="Click Here To Select Agent's Branch"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:text="Surname"
+                android:textColor="#5B1B4F"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/agentSurname"
+                style="@style/EditTextCustomHolo"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:text="First Name"
+                android:textColor="#5B1B4F"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/agentFirstName"
+                style="@style/EditTextCustomHolo"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:text="Username"
+                android:textColor="#5B1B4F"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/agentUserName"
+                style="@style/EditTextCustomHolo"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:text="Password"
+                android:textColor="#5B1B4F"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/agentPassword"
+                style="@style/EditTextCustomHolo"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:text="Confirm Password"
+                android:textColor="#5B1B4F"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/agentPassConf"
+                style="@style/EditTextCustomHolo"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:text="Agent's E-mail"
+                android:textColor="#5B1B4F"
+                android:textSize="16dp"
+
+                />
+
+
+            <EditText
+                android:id="@+id/agentEmail"
+                style="@style/EditTextCustomHolo"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+
+                />
+
+
+            <Button
+                android:id="@+id/agentSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="4"
+                android:background="@drawable/buttonshapegreen"
+                android:text="Create Agent"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/agentCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/buttonshapecancel"
+                android:text="Cancel"
+                android:textColor="#5B1B4F"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gh.com.firstatlanticbank.firstatlanticaccountopening" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DashActivity"
+            android:label="@string/title_activity_dash"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AdminDashActivity"
+            android:label="@string/title_activity_admin_dash"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".RequiredServicesActivity"
+            android:label="@string/title_activity_required_services"
+            android:parentActivityName=".BranchActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="gh.com.firstatlanticbank.firstatlanticaccountopening.DashActivity" />
+        </activity>
+        <activity
+            android:name=".BranchActivity"
+            android:label="@string/title_activity_branch"
+            android:parentActivityName=".DashActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="gh.com.firstatlanticbank.firstatlanticaccountopening.DashActivity" />
+        </activity>
+        <activity
+            android:name=".AccountMenuActivity"
+            android:label="@string/title_activity_account_menu"
+            android:parentActivityName=".DashActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="gh.com.firstatlanticbank.firstatlanticaccountopening.DashActivity" />
+        </activity>
+        <activity
+            android:name=".PersonalDetailsActivity"
+            android:label="@string/title_activity_personal_details"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ContactActivity"
+            android:label="@string/title_activity_contact"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".EditAccountActivity"
+            android:label="@string/title_activity_edit_account"
+            android:parentActivityName=".DashActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="gh.com.firstatlanticbank.firstatlanticaccountopening.DashActivity" />
+        </activity>
+        <activity
+            android:name=".CorporateActivity"
+            android:label="@string/title_activity_corporate"
+            android:parentActivityName=".DashActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="gh.com.firstatlanticbank.firstatlanticaccountopening.DashActivity" />
+        </activity>
+        <activity
+            android:name=".CreateAgentActivity"
+            android:label="@string/title_activity_create_agent"
+            android:parentActivityName=".AdminDashActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="gh.com.firstatlanticbank.firstatlanticaccountopening.AdminDashActivity" />
+        </activity>
+    </application>
+
+</manifest>

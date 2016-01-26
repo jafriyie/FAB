@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">First Atlantic Account Opening</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="branches">
+        <item>Head Office, Ridge West</item>
+        <item>Airport Branch, Airport Residential Area</item>
+        <item>North Industrial Area, Dadeban Road</item>
+        <item>North Ridge, Near Alisa Hotel </item>
+        <item>Spintex Road Branch, Adjacent Finatrade Building </item>
+        <item>East Legon, America House Junction </item>
+        <item>Accra Central, Central Business District </item>
+        <item>Kantamanto, Tarzan House </item>
+        <item>Max Mart, 1st Floor Maxmart Building </item>
+        <item>Abossey Okai, Korle Bu Road</item>
+        <item>Osu Oxford Street, Opposite KFC Restaurant</item>
+        <item>Abeka Lapaz, Fraga Oil Premises</item>
+        <item>Tema Community 1, Efua Halam House Tema</item>
+        <item>Tema Harbour Road, Plot# B12 &amp; 13 Harbour Area </item>
+        <item>Nhyiaeso, No. 7 Ellis Avenue</item>
+        <item>Suame, Suame Magazine</item>
+    </string-array>
+
+    <string-array name="corporateTypes">
+        <item>Private Limited Liability Company</item>
+        <item>Public Limited Liability Company</item>
+        <item>Company Limited by Guarantee</item>
+        <item>Managed Fund</item>
+        <item>Partnership</item>
+        <item>State Owned Company/ Government Ministry/ Agency</item>
+        <item>Sole Proprietor</item>
+        <item>Other (Please Specify)</item>
+    </string-array>
+    
+    <string-array name="currency">
+        <item>GHS</item>
+        <item>GBP</item>
+        <item>EURO</item>
+        <item>USD</item>
+    </string-array>
+
+    <string-array name="cardPreferences">
+        <item>MasterCard Debit </item>
+        <item>MasterCard Prepaid </item>
+        <item>Visa Debit</item>
+        <item>Visa Prepaid</item>
+    </string-array>
+
+    <string-array name="statementPreferences">
+        <item>Daily </item>
+        <item>Weekly </item>
+        <item>Monthly</item>
+        <item>Quarterly</item>
+        <item>Semi-Annually</item>
+        <item>Annually</item>
+    </string-array>
+
+
+    <string name="title_activity_branch">Branch Selector</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_dash">Home</string>
+    <string name="title_activity_admin_dash">Dashboard</string>
+    <string name="title_activity_required_services">Account Services Required</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_account_menu">Create Account</string>
+    <string name="title_activity_personal_details">Personal Details</string>
+    <string name="title_activity_contact">Contact Details</string>
+    <string name="title_activity_edit_account">"Edit Account "</string>
+    <string name="title_activity_corporate">Create Corporate Account</string>
+    <string name="title_activity_create_agent">Create Agent</string>
+
+</resources>
