@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="AccTheme" parent="@style/_AccTheme"/>
+
+  <style name="_AccTheme" parent="android:Theme.Holo.Light">
+
+    <item name="android:editTextBackground">@drawable/acctheme_edit_text_holo_light</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/acctheme_btn_check_holo_light</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/acctheme_btn_radio_holo_light</item>
+
+    <item name="android:buttonStyle">@style/ButtonAccTheme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonAccTheme</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerAccTheme</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/acctheme_list_selector_holo_light</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/acctheme_activated_background_holo_light</item>
+
+  </style>
+
+</resources>

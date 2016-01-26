@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".LoginActivity"
+    android:background="#5B1B4F"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/atlantic"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Username"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        />
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="#FFFFFF"
+        android:layout_above="@+id/txtPassword1"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+
+        >
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Password"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:inputType="textPassword"
+        android:background="#FFFFFF"
+        android:layout_above="@+id/txtPassword1"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/bLogIn"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/linearLayoutControls"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonshape"
+        android:textColor="#54254E"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/tvForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Forgot Your Password?"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:textColor="#FFFFFF"
+        />
+
+
+
+    <!--<android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>-->
+
+   <!-- <include layout="@layout/content_login" />-->
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email" />-->
+
+</LinearLayout>
