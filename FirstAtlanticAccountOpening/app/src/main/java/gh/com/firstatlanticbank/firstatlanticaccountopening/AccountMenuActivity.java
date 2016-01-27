@@ -27,9 +27,9 @@ public class AccountMenuActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent closeIntent = new Intent(AccountMenuActivity.this, DashActivity.class);
-        startActivity(closeIntent);
-        finish();
+        ExitDialog exDialog = new ExitDialog();
+        exDialog.show(getSupportFragmentManager(), "exDialog");
+
     }
 
     @Override
@@ -38,6 +38,7 @@ public class AccountMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_account_menu);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
 
 
@@ -72,8 +73,7 @@ public class AccountMenuActivity extends AppCompatActivity {
         menuIDVer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccountMenuActivity.this, VerifyActivity.class);
-                startActivity(intent);
+
             }
         });
 
@@ -112,23 +112,12 @@ public class AccountMenuActivity extends AppCompatActivity {
         menuPhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent6 = new Intent(AccountMenuActivity.this, PictureActivity.class);
-                startActivity(myIntent6);
+
             }
         });
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-
-       /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
     }
 
 }
