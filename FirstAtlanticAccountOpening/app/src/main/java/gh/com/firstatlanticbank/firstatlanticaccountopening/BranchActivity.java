@@ -17,10 +17,6 @@ import android.widget.Toast;
 
 public class BranchActivity extends AppCompatActivity {
 
-    @Override
-    public void onBackPressed() {
-        finish();
-    }
 
     public static EditText pickedBranch;
     Button branchCancel, branchSave;
@@ -63,7 +59,6 @@ public class BranchActivity extends AppCompatActivity {
                     Toast.makeText(BranchActivity.this, AccountMenuActivity.accBranch, Toast.LENGTH_SHORT).show();
                     Intent myIntent = new Intent(BranchActivity.this, AccountMenuActivity.class);
                     startActivity(myIntent);
-                    finish();
                 }
                 else{
                     Intent myIntent = new Intent(BranchActivity.this, AccountMenuActivity.class);
