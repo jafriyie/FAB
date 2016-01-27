@@ -56,7 +56,6 @@ public class DashActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent myIntent = new Intent(DashActivity.this, AccountMenuActivity.class);
                 startActivity(myIntent);
-                finish();
             }
         });
 
@@ -65,7 +64,6 @@ public class DashActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent myIntent2 = new Intent (DashActivity.this, CorporateActivity.class);
                 startActivity(myIntent2);
-                finish();
             }
         });
 
@@ -82,7 +80,6 @@ public class DashActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent myIntent4 = new Intent(DashActivity.this, EditAccountActivity.class);
                 startActivity(myIntent4);
-                finish();
             }
         });
 

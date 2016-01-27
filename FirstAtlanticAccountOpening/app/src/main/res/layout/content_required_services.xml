@@ -45,14 +45,12 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/reqAccCurr"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Current"
                         android:textColor="#5B1B4F" />
 
                     <RadioButton
-                        android:id="@+id/reqAccSave"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Savings"
@@ -171,14 +169,12 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/reqAtlWeb"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Atlantic Web"
                         android:textColor="#5B1B4F" />
 
                     <RadioButton
-                        android:id="@+id/reqAtlMob"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Atlantic Mobile"
@@ -212,14 +208,12 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/reqAlertEmail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="E-mail Alert"
                         android:textColor="#5B1B4F" />
 
                     <RadioButton
-                        android:id="@+id/reqAlertSms"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="SMS"
@@ -246,7 +240,6 @@
 
 
                 <RadioButton
-                    android:id="@+id/reqStmtEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
@@ -314,7 +307,6 @@
 
 
                 <RadioButton
-                    android:id="@+id/reqCheq"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
@@ -347,14 +339,12 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/reqCheqConfYes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Yes"
                         android:textColor="#5B1B4F" />
 
                     <RadioButton
-                        android:id="@+id/reqCheqConfNo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No"
