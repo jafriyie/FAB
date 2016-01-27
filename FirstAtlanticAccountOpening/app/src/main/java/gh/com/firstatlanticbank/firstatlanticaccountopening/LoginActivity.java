@@ -11,10 +11,15 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginActivity extends Activity {
 
     private Button btnLogin;
+    private EditText txtUsername;
+    private EditText txtPassword;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +27,8 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
 
         btnLogin =(Button) findViewById(R.id.bLogIn);
-
+        txtUsername = (EditText)findViewById(R.id.etUsername);
+        txtPassword = (EditText)findViewById(R.id.etPassword);
 
 
 
@@ -30,9 +36,27 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(View v) {
 
+                if (txtUsername.getText().toString().contentEquals("")) {
+                    Toast.makeText(getApplicationContext(), "Please provide username!", Toast.LENGTH_SHORT).show();
+                } else if (txtPassword.getText().toString().contentEquals("")) {
+                    Toast.makeText(getApplicationContext(), "Please provide password!", Toast.LENGTH_SHORT).show();
+                } else {
 
-                Intent myIntent = new Intent(LoginActivity.this, DashActivity.class);
-                startActivity(myIntent);
+                if(txtUsername.getText().toString().contentEquals("test"))
+                {
+                    if(txtPassword.getText().toString().contentEquals("123456"))
+                    {
+                        Intent myIntent = new Intent(LoginActivity.this, DashActivity.class);
+                        startActivity(myIntent);
+                    }else
+                    {
+                        Toast.makeText(getApplicationContext() ,"Wrong password!!", Toast.LENGTH_SHORT).show();
+                    }
+                }else
+                {
+                    Toast.makeText(getApplicationContext() ,"Wrong username!", Toast.LENGTH_SHORT).show();
+                }
+                }
 
                 /*isMobileDataAvailable = mobileData.checkMobileInternetConn();
                 isWifiAvailable = wifiData.checkMobileInternetConn();
